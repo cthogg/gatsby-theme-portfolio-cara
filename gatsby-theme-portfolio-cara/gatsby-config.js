@@ -1,8 +1,8 @@
 const path = require('path')
 const config = require('./config/website')
 
+const posts = `src/pages/markdown`
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-console.log(config.siteTitle)
 module.exports = {
   /* General Information */
   siteMetadata: {
@@ -51,6 +51,27 @@ module.exports = {
             src: '/favicons/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.resolve(posts),
+        name: 'markdown-pages',
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow',
+            },
           },
         ],
       },
