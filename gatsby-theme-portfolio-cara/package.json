@@ -1,7 +1,7 @@
 {
   "name": "gatsby-theme-portfolio-cara",
-  "description": "Theme based on Portfolio-cara",
-  "version": "0.0.1",
+  "description": "Gatsby Portfolio Theme",
+  "version": "0.0.2",
   "author": "Christopher Hogg",
   "main": "gatsby-config.js",
   "license": "MIT",
@@ -57,11 +57,7 @@
     "prettier": "^1.18.2"
   },
   "repository": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara",
+    "url": "https://github.com/cthogg/gatsby-theme-portfolio-cara",
     "type": "git"
-  },
-  "bugs": {
-    "url": "https://github.com/LekoArts/gatsby-starter-portfolio-cara/issues"
-  },
-  "homepage": "https://cara.lekoarts.de"
+  }
 }
