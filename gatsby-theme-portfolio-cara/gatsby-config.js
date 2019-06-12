@@ -1,7 +1,8 @@
+const path = require('path')
 const config = require('./config/website')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-
+console.log(config.siteTitle)
 module.exports = {
   /* General Information */
   siteMetadata: {
@@ -11,6 +12,10 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: { path: path.join(__dirname, 'src/pages') },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

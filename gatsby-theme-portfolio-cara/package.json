@@ -3,6 +3,7 @@
   "description": "Theme based on Portfolio-cara",
   "version": "0.0.1",
   "author": "Christopher Hogg",
+  "main": "gatsby-config.js",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
@@ -12,6 +13,7 @@
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify": "^2.0.17",
     "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-page-creator": "^2.0.13",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.3",
     "gatsby-plugin-styled-components": "^3.0.7",
