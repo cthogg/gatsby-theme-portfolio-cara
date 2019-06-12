@@ -121,9 +121,9 @@ const Index = ({ data }) => {
             </ContactText>
           </Inner>
           <Footer>
-            &copy; 2019 by Gatsby Starter Portfolio Cara.{' '}
-            <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by{' '}
-            <a href="https://www.lekoarts.de">LekoArts</a>.
+            &copy; 2019 by Gatsby Theme Portfolio Cara.{' '}
+            <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by Chris
+            Hogg with thanks to <a href="https://www.lekoarts.de">LekoArts</a> for the theme
           </Footer>
         </Contact>
       </Parallax>
@@ -144,6 +144,10 @@ export const pageQuery = graphql`
     markdownRemark {
       frontmatter {
         title
+        subtitle
+        email
+        aboutDesc
+        aboutSub
       }
       html
     }
