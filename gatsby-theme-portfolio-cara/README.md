@@ -51,10 +51,7 @@ projectThreeDesc  :  "desc"
 projectFourTitle  : "hi"     
 projectFourDesc   :   "bbc.com"
 projectFourUrl    :  "desc" 
----
-
-Stub page.
-
+profileImageUrl: "https://cara.lekoarts.de/static/avatar-c99035c8ff4376bb578c17e597c4baed.jpg"
 ---
 
 Stub page.
@@ -67,10 +64,11 @@ Stub page.
 1. (coming soon): Deploy to netlify to see it live!
 
 ## TODO:
+
 - put the config file as a theme option
 - Add a license.
-- 
-- Compare to modern-portfolio to make a template for themes so can easily switch between themes. 
+- Compare to modern-portfolio to make a template for themes so can easily switch between themes (probably best to put the questions object in [commander-pages](https://github.com/cthogg/commander-pages) in the theme repo for added extensibility) 
+
 ## With thanks to:
 -  https://github.com/cthogg/gatsby-theme-modern-portfolio for the theme template.
 -  https://github.com/LekoArts/gatsby-starter-portfolio-cara for the starter template.
