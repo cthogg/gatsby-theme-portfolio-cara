@@ -1,24 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import tw from 'tailwind.macro'
-import { Parallax } from 'react-spring/renderprops-addons.cjs'
-import PropTypes from 'prop-types'
 // Components
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { Parallax } from 'react-spring/renderprops-addons.cjs'
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 import Layout from '../components/Layout'
 import ProjectCard from '../components/ProjectCard'
-
 // Elements
 import Inner from '../elements/Inner'
-import { Title, BigTitle, Subtitle } from '../elements/Titles'
-
+import { BigTitle, Subtitle, Title } from '../elements/Titles'
+import About from '../views/About'
+import Contact from '../views/Contact'
 // Views
 import Hero from '../views/Hero'
 import Projects from '../views/Projects'
-import About from '../views/About'
-import Contact from '../views/Contact'
-
-import avatar from '../images/avatar.jpg'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -79,6 +75,7 @@ const Index = ({ data }) => {
     projectFourTitle,
     projectFourDesc,
     projectFourUrl,
+    profileImageUrl,
   } = frontmatter
   return (
     <>
@@ -126,7 +123,7 @@ const Index = ({ data }) => {
         <About offset={3}>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={profileImageUrl} alt="John Doe" />
             <AboutSub>{aboutSub} </AboutSub>
           </AboutHero>
           <AboutDesc>{aboutDesc}</AboutDesc>
@@ -141,7 +138,7 @@ const Index = ({ data }) => {
           <Footer>
             &copy; 2019 by Gatsby Theme Portfolio Cara.{' '}
             <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">Github Repository</a>. Made by Chris
-            Hogg with thanks to <a href="https://www.lekoarts.de">LekoArts</a> for the theme
+            Hogg with thanks to <a href="https://www.lekoarts.de">LekoArts</a> for the starter
           </Footer>
         </Contact>
       </Parallax>
@@ -166,6 +163,7 @@ export const pageQuery = graphql`
         email
         aboutDesc
         aboutSub
+        profileImageUrl
         projectOneTitle
         projectOneUrl
         projectOneDesc
