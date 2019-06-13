@@ -61,7 +61,25 @@ const Footer = styled.footer`
 const Index = ({ data }) => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-  const { title, subtitle, aboutDesc, aboutSub, email } = frontmatter
+  const {
+    title,
+    subtitle,
+    aboutDesc,
+    aboutSub,
+    email,
+    projectOneTitle,
+    projectOneUrl,
+    projectOneDesc,
+    projectTwoTitle,
+    projectTwoUrl,
+    projectTwoDesc,
+    projectThreeTitle,
+    projectThreeUrl,
+    projectThreeDesc,
+    projectFourTitle,
+    projectFourDesc,
+    projectFourUrl,
+  } = frontmatter
   return (
     <>
       <Layout />
@@ -76,32 +94,32 @@ const Index = ({ data }) => {
           <Title>Projects</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
-              link="https://www.behance.net/gallery/58937147/Freiheit"
+              title={projectOneTitle}
+              link={projectOneUrl}
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              {projectOneDesc}
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
-              link="https://www.behance.net/gallery/52915793/Harry-Potter"
+              title={projectTwoTitle}
+              link={projectTwoUrl}
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              {projectTwoDesc}
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
-              link="https://www.behance.net/gallery/43907099/Tomb-Raider"
+              title={projectThreeTitle}
+              link={projectThreeUrl}
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              {projectThreeDesc}
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
-              link="https://www.behance.net/gallery/38068151/Eagle"
+              title={projectFourTitle}
+              link={projectFourUrl}
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              {projectFourDesc}{' '}
             </ProjectCard>
           </ProjectsWrapper>
         </Projects>
@@ -148,6 +166,18 @@ export const pageQuery = graphql`
         email
         aboutDesc
         aboutSub
+        projectOneTitle
+        projectOneUrl
+        projectOneDesc
+        projectTwoTitle
+        projectTwoUrl
+        projectTwoDesc
+        projectThreeTitle
+        projectThreeUrl
+        projectThreeDesc
+        projectFourTitle
+        projectFourDesc
+        projectFourUrl
       }
       html
     }

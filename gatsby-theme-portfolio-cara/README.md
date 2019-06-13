@@ -10,7 +10,7 @@ Gatsby theme adapted from the beautiful [Cara](https://github.com/LekoArts/gatsb
 
 
 ## Out of Scope
-- Ability to blog - hopefully this can be *composed* with another theme later.
+- Ability to blog - hopefully another theme can manage the blogging part of the site later.
 
 ## Installation
 
@@ -39,6 +39,22 @@ subtitle: "Hello me"
 email: 'hi@hi.com'
 aboutDesc: 'yoyoyoy'
 aboutSub: 'hehehe'
+projectOneTitle : "hi"          
+projectOneUrl   :   "bbc.com"                        
+projectOneDesc  :  "desc"                
+projectTwoTitle  : "hi"     
+projectTwoUrl   :   "bbc.com"
+projectTwoDesc   :  "desc"   
+projectThreeTitle  : "hi"      
+projectThreeUrl   :   "bbc.com"
+projectThreeDesc  :  "desc" 
+projectFourTitle  : "hi"     
+projectFourDesc   :   "bbc.com"
+projectFourUrl    :  "desc" 
+---
+
+Stub page.
+
 ---
 
 Stub page.
