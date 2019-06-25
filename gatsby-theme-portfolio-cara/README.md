@@ -6,10 +6,6 @@ Gatsby theme adapted from the beautiful [Cara](https://github.com/LekoArts/gatsb
 
 - Write a simple portfolio site from just one markdown file
 
-## Out of Scope
-
-- Ability to blog - hopefully another theme can manage the blogging part of the site later.
-
 ## Installation
 
 1. On a new repo install gatsby and this theme `yarn add gatsby gatsby-theme-portfolio-cara -D`
@@ -52,9 +48,9 @@ projectFourUrl    :  "https://github.com/cthogg/gatsby-theme-portfolio-cara"
 profileImageUrl: "https://cara.lekoarts.de/static/avatar-c99035c8ff4376bb578c17e597c4baed.jpg"
 ---
 
-Stub page.
-
 ```
+1.  Copy and paste [this file](https://raw.githubusercontent.com/cthogg/gatsby-theme-portfolio-cara/master/example/tailwind.js) into the project root and name as `tailwind.js` 
+
 1. Add `.cache` and `public` to the repo's `.gitignore` file
 
 1. Run with `yarn gatsby develop`  
